@@ -12,4 +12,4 @@ Een PHP-script met twee functies voor schoolopdrachten: een Fibonacci-reeks gene
 2. Open de terminal in de map waar het script staat.
 3. Voer het script uit met het volgende commando:
    ```bash
-   php script.php
+   php fibonacci.php
