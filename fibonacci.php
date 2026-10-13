@@ -1,11 +1,11 @@
 <?php
-// Functie voor de Fibonacci-reeks tot n stappen
+// Function for the Fibonacci sequence up to n steps
 function fibonacci($n) {
     $a = 1;
     $b = 2;
     $result = [];
 
-    // Loop om door alle stappen heen te gaan
+    // Loop to iterate through all steps
     for ($i = 1; $i <= $n; $i++) {
         if ($i == 1) {
             $result[] = 1;
@@ -19,20 +19,20 @@ function fibonacci($n) {
         }
     }
 
-    // Plak de getallen aan elkaar met een komma
+    // Join the numbers together with a comma
     return implode(', ', $result);
 }
 
-// Functie voor de tafelkaart met geneste for-loops
+// Function for the multiplication table with nested for-loops
 function tafelkaart($n) {
-    // Buitenste loop voor de rijen
+    // Outer loop for the rows
     for ($i = 1; $i <= $n; $i++) {
-        // Binnenste loop voor de kolommen
+        // Inner loop for the columns
         for ($j = 1; $j <= $n; $j++) {
-            // Vermenigvuldig en print met een tab ertussen
+            // Multiply and print with a tab in between
             echo ($i * $j) . "\t";
         }
-        // Na elke rij een nieuwe regel starten
+        // Start a new line after each row
         echo "\n";
     }
 }
